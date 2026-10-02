@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  applemusic-player:
+    build: .
+    container_name: music-player
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MUSIC_DIR=/music
+      - PORT=8000
+      - PYTHONDONTWRITEBYTECODE=1
+    volumes:
+      # CAMBIA '/ruta/a/tu/musica' por la carpeta donde tengas tus canciones en tu servidor
+      - /ruta/a/tu/musica:/music:ro
+      # Persistencia de caché y configuración
+      - cache_audio:/app/.cache_audio
+      - cache_covers:/app/.cache_covers
+      - ./config.json:/app/config.json
+
+volumes:
+  cache_audio:
+  cache_covers:

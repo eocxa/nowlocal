@@ -1,0 +1,10 @@
+﻿{
+  "name": "Música",
+  "short_name": "Música",
+  "start_url": "/movil",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

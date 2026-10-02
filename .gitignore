@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Audio & Cover Cache
+.cache_audio/
+.cache_covers/
+*.tmp
+*.bak
+
+# Environment files
+.env
+*.env
+
+# Audio & Video media files
+*.flac
+*.mp3
+*.m4a
+*.wav
+*.aac
+*.ogg
+*.opus
+*.mp4
+
+# OS generated files
+.DS_Store
+Thumbs.db
+

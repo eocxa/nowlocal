@@ -1,0 +1,12 @@
+.cache_audio
+.cache_covers
+*.bak
+__pycache__
+*.pyc
+.git
+.gitignore
+scratch
+*.tmp
+node_modules
+test_live.flac
+iniciar_completo.bat
