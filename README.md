@@ -12,8 +12,8 @@ Un servidor de streaming de audio local de alto rendimiento y reproductor web co
 - **Reproducción & Streaming Fluido**: Soporte nativo para `.m4a`, `.mp3`, `.flac`, `.wav`, `.aac`, `.ogg`, `.opus`, con peticiones por rango (`HTTP 206 Partial Content`) para scrubbing y seek instantáneo.
 - **Letras Sincronizadas (Word-by-Word & TTML)**:
   - Lectura nativa de archivos `.ttml` (Apple Music Timed Text con sincronización sílaba por sílaba y división de voces v1/v2).
-  - Letras estándar `.lrc`.
-  - Letras embebidas en metadatos ID3 / MP4.
+  - Letras estándar `.lrc` y embebidas en metadatos ID3 / MP4.
+  - Renderizado web interactivo y fluido potenciado por [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics).
   - Fallback automático a **LRCLIB** cuando la pista no cuenta con letra local.
 - **Portadas Dinámicas & Motion Artwork**: Extracción automática de carátulas embebidas en alta resolución y soporte para portadas animadas (`.mp4` square y tall).
 - **Caché Inteligente LRU**: Límite de caché de audio configurable con política LRU (Least Recently Used) para mantener el almacenamiento siempre bajo control.
@@ -122,7 +122,14 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ---
 
+## 🙏 Agradecimientos y Créditos
+
+- [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics) de **amll-dev**: Biblioteca de referencia y motor utilizado para el renderizado web de letras sincronizadas y efectos visuales tipográficos estilo Apple Music.
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
 
