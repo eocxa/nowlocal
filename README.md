@@ -1,6 +1,9 @@
 # NowLocal Server & Web Player 🎵
 
-Un servidor de streaming de audio local de alto rendimiento y reproductor web con fidelidad **Apple Music / Apple TV**, diseñado para tablets, navegadores y como backend complementario para **Minidisc (iOS)**.
+Un servidor de streaming de audio local de alto rendimiento y reproductor web con interfaz inspirada en **Apple Music / Apple TV**, diseñado para tablets, navegadores y como backend complementario para **Minidisc (iOS)**.
+
+> [!NOTE]
+> **NowLocal** es un desarrollo de código abierto puramente educativo y no comercial. Consulta el [Descargo de Responsabilidad](#️-descargo-de-responsabilidad--legal-disclaimer) para más detalles sobre uso, marcas y licencias.
 
 ---
 
@@ -102,6 +105,24 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ---
 
+## ⚖️ Descargo de Responsabilidad / Legal Disclaimer
+
+> [!WARNING]
+> **Aviso Importante sobre Uso, Responsabilidad y Derechos de Autor:**
+>
+> 1. **Propósito Educativo e Imitación Visual**: Este proyecto (**NowLocal**) es un desarrollo experimental, personal y de código abierto creado con fines de investigación técnica y aprendizaje sobre tecnologías web (HTML5 Canvas, WebSockets, renderizado de subtítulos TTML y streaming HTTP de audio). **Es únicamente una recreación e imitación de interfaz gráfica** inspirada en los reproductores modernos de música.
+>
+> 2. **Sin Fines de Lucro ni Comercialización**: Este software es 100% gratuito y de código abierto. **No se comercializa, vende, distribuye con costo ni monetiza** bajo ninguna modalidad. No se cobran suscripciones, accesos ni donaciones por su utilización.
+>
+> 3. **Ausencia de Contenido Protegido (Sin Copyright)**: Este repositorio **NO contiene, distribuye ni aloja archivos de música, canciones, álbumes, carátulas comerciales ni ningún material multimedia protegido por derechos de autor**. El software es únicamente un motor de reproducción en blanco que trabaja de forma local y privada con la biblioteca personal que el propio usuario configure en su dispositivo o servidor.
+>
+> 4. **Responsabilidad Exclusiva del Usuario**: El uso que se le dé a este software queda bajo la **exclusiva y total responsabilidad del usuario final**. Cada persona es responsable de contar con las licencias legítimas, copias de respaldo autorizadas o derechos correspondientes sobre cualquier pista de audio o archivo que decida reproducir o transmitir en su red. El autor y los contribuidores se deslindan de cualquier uso indebido o no autorizado.
+>
+> 5. **Aviso de Marcas Registradas**: *Apple*, *Apple Music*, *Apple TV*, *iOS*, *macOS*, *ALAC*, *Dolby Atmos* y todas las marcas, nombres de productos o logotipos mencionados pertenecen a sus respectivos titulares (Apple Inc. y/u otras entidades). Se mencionan únicamente con carácter informativo y descriptivo para indicar compatibilidad de formatos e interoperabilidad técnica (*Fair Use / Uso Legítimo*). Este software no tiene relación, patrocinio, afiliación ni respaldo oficial por parte de Apple Inc. ni de plataformas comerciales.
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
