@@ -133,4 +133,4 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Este proyecto está bajo la [Licencia MIT](LICENSE).

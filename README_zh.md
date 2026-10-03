@@ -133,4 +133,4 @@ curl -X POST http://localhost:7430/api/config \
 
 ## 许可证
 
-本项目基于 MIT License 协议开源。
+本项目基于 [MIT License](LICENSE) 协议开源。
