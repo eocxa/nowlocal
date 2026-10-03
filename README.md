@@ -1,13 +1,15 @@
-# NowLocal Server & Web Player 🎵
+[Español](README.md) | [English](README_en.md) | [简体中文](README_zh.md)
+
+# NowLocal Server & Web Player
 
 Un servidor de streaming de audio local de alto rendimiento y reproductor web con interfaz inspirada en **Apple Music / Apple TV**, diseñado para tablets, navegadores y como backend complementario para **Minidisc (iOS)**.
 
 > [!NOTE]
-> **NowLocal** es un desarrollo de código abierto puramente educativo y no comercial. Consulta el [Descargo de Responsabilidad](#️-descargo-de-responsabilidad--legal-disclaimer) para más detalles sobre uso, marcas y licencias.
+> **NowLocal** es un desarrollo de código abierto puramente educativo y no comercial. Consulta el [Descargo de Responsabilidad](#descargo-de-responsabilidad--legal-disclaimer) para más detalles sobre uso, marcas y licencias.
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 - **Reproducción & Streaming Fluido**: Soporte nativo para `.m4a`, `.mp3`, `.flac`, `.wav`, `.aac`, `.ogg`, `.opus`, con peticiones por rango (`HTTP 206 Partial Content`) para scrubbing y seek instantáneo.
 - **Letras Sincronizadas (Word-by-Word & TTML)**:
@@ -22,7 +24,7 @@ Un servidor de streaming de audio local de alto rendimiento y reproductor web co
 
 ---
 
-## 🚀 Despliegue Rápido
+## Despliegue Rápido
 
 ### Opción 1: Con Docker Compose (Recomendado)
 
@@ -75,7 +77,7 @@ Un servidor de streaming de audio local de alto rendimiento y reproductor web co
 
 ---
 
-## ⚙️ Configuración
+## Configuración
 
 El servidor se puede configurar mediante variables de entorno o a través de `config.json`:
 
@@ -93,7 +95,7 @@ curl -X POST http://localhost:8000/api/config \
 
 ---
 
-## 📱 Conexión con Minidisc (iOS)
+## Conexión con Minidisc (iOS)
 
 Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
@@ -105,7 +107,7 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ---
 
-## ⚖️ Descargo de Responsabilidad / Legal Disclaimer
+## Descargo de Responsabilidad / Legal Disclaimer
 
 > [!WARNING]
 > **Aviso Importante sobre Uso, Responsabilidad y Derechos de Autor:**
@@ -122,14 +124,12 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ---
 
-## 🙏 Agradecimientos y Créditos
+## Agradecimientos y Créditos
 
 - [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics) de **amll-dev**: Biblioteca de referencia y motor utilizado para el renderizado web de letras sincronizadas y efectos visuales tipográficos estilo Apple Music.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT.
-
-
