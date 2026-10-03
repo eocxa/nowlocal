@@ -16,6 +16,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el código del reproductor
 COPY . .
 
-EXPOSE 8000
+EXPOSE 7430
 
 CMD ["python", "servidor_completo.py"]

@@ -49,8 +49,8 @@
    ```
 
 4. 在浏览器中访问:
-   - **桌面 / 平板界面**: `http://localhost:8000`
-   - **移动端界面**: `http://localhost:8000/movil`
+   - **桌面 / 平板界面**: `http://localhost:7430`
+   - **移动端界面**: `http://localhost:7430/movil`
 
 ---
 
@@ -83,12 +83,12 @@
 
 | 环境变量 | 配置描述 | 默认值 |
 |----------|----------|--------|
-| `PORT`   | HTTP 服务监听端口 | `8000` |
+| `PORT`   | HTTP 服务监听端口 | `7430` |
 | `MUSIC_DIR` | 音乐媒体目录绝对路径 | 当前用户的 `~/Music` 文件夹 |
 
 您也可以随时在 Web 界面中修改音乐目录，或通过向 `/api/config` 发送 POST 请求更新:
 ```bash
-curl -X POST http://localhost:8000/api/config \
+curl -X POST http://localhost:7430/api/config \
   -H "Content-Type: application/json" \
   -d '{"music_dir": "/你的/音乐目录"}'
 ```
@@ -102,7 +102,7 @@ curl -X POST http://localhost:8000/api/config \
 1. 在 iOS 设备上打开 **Minidisc**。
 2. 进入 **设置** (`Settings`) > **扩展集成** (`Integrations`)。
 3. 选择 **NowLocal** 或 **Animated Artwork** 选项卡。
-4. 输入您的服务器 IP 地址或域名及端口（例如: `http://192.168.1.100:8000`）。
+4. 输入您的服务器 IP 地址或域名及端口（例如: `http://192.168.1.100:7430`）。
 5. 配置完成！Minidisc 将自动从您的私有服务器加载丰富的 TTML 歌词、音质标识与动态封面视频。
 
 ---
@@ -126,6 +126,7 @@ curl -X POST http://localhost:8000/api/config \
 
 ## 致谢与鸣谢
 
+- [**Minidisc**](https://github.com/Loriage/Minidisc) 由 **Loriage** 开发: 原生 iOS 音乐播放器客户端，亦是启发本项目构建本地流媒体及歌词增强后端的原始项目。
 - [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics) 由 **amll-dev** 开发: 本项目 Web 界面中采用的卓越歌词渲染与排版动效引擎。
 
 ---

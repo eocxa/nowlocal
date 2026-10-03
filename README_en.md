@@ -49,8 +49,8 @@ A high-performance local audio streaming server and web player with an interface
    ```
 
 4. Open in your browser:
-   - **Desktop / Tablet Interface**: `http://localhost:8000`
-   - **Mobile Interface**: `http://localhost:8000/movil`
+   - **Desktop / Tablet Interface**: `http://localhost:7430`
+   - **Mobile Interface**: `http://localhost:7430/movil`
 
 ---
 
@@ -83,12 +83,12 @@ The server can be configured using environment variables or via `config.json`:
 
 | Environment Variable | Description | Default Value |
 |----------------------|-------------|---------------|
-| `PORT`               | HTTP server port | `8000` |
+| `PORT`               | HTTP server port | `7430` |
 | `MUSIC_DIR`          | Absolute path to music directory | User `~/Music` folder |
 
 You can also update the music directory dynamically from the web interface or via a POST request to `/api/config`:
 ```bash
-curl -X POST http://localhost:8000/api/config \
+curl -X POST http://localhost:7430/api/config \
   -H "Content-Type: application/json" \
   -d '{"music_dir": "/your/music/folder"}'
 ```
@@ -102,7 +102,7 @@ To connect your Minidisc iOS client to this NowLocal server:
 1. Open **Minidisc** on your iOS device.
 2. Go to **Settings** > **Integrations**.
 3. Select the **NowLocal** or **Animated Artwork** tab.
-4. Enter your server IP or domain and port (for example: `http://192.168.1.100:8000`).
+4. Enter your server IP or domain and port (for example: `http://192.168.1.100:7430`).
 5. All set! Minidisc will automatically fetch advanced TTML lyrics, audio badges, and animated motion artwork directly from your local library.
 
 ---
@@ -126,6 +126,7 @@ To connect your Minidisc iOS client to this NowLocal server:
 
 ## Acknowledgments & Credits
 
+- [**Minidisc**](https://github.com/Loriage/Minidisc) by **Loriage**: The original iOS music client that inspired the creation of this companion local enrichment server and web player.
 - [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics) by **amll-dev**: Superb library and engine utilized for web-based synchronized lyrics rendering and Apple Music-style typography animations.
 
 ---

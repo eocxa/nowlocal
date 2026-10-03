@@ -49,8 +49,8 @@ Un servidor de streaming de audio local de alto rendimiento y reproductor web co
    ```
 
 4. Abre en tu navegador:
-   - **Interfaz Escritorio/Tablet**: `http://localhost:8000`
-   - **Interfaz Móvil**: `http://localhost:8000/movil`
+   - **Interfaz Escritorio/Tablet**: `http://localhost:7430`
+   - **Interfaz Móvil**: `http://localhost:7430/movil`
 
 ---
 
@@ -83,12 +83,12 @@ El servidor se puede configurar mediante variables de entorno o a través de `co
 
 | Variable de Entorno | Descripción | Valor por Defecto |
 |---------------------|-------------|-------------------|
-| `PORT`              | Puerto HTTP del servidor | `8000` |
+| `PORT`              | Puerto HTTP del servidor | `7430` |
 | `MUSIC_DIR`         | Ruta absoluta a la carpeta de música | Carpeta `~/Music` del usuario |
 
 También puedes cambiar la carpeta de música en cualquier momento desde la interfaz web o mediante una petición POST a `/api/config`:
 ```bash
-curl -X POST http://localhost:8000/api/config \
+curl -X POST http://localhost:7430/api/config \
   -H "Content-Type: application/json" \
   -d '{"music_dir": "/mi/musica"}'
 ```
@@ -102,7 +102,7 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 1. Abre **Minidisc** en tu dispositivo iOS.
 2. Ve a **Configuración** (`Settings`) > **Integraciones**.
 3. Selecciona la pestaña **NowLocal** o **Animated Artwork**.
-4. Ingresa la dirección IP o dominio de tu servidor y puerto (por ejemplo: `http://192.168.1.100:8000`).
+4. Ingresa la dirección IP o dominio de tu servidor y puerto (por ejemplo: `http://192.168.1.100:7430`).
 5. ¡Listo! Minidisc cargará automáticamente las letras TTML avanzadas, indicadores de audio y portadas animadas desde tu biblioteca local.
 
 ---
@@ -126,6 +126,7 @@ Para conectar tu cliente de Minidisc a este servidor NowLocal:
 
 ## Agradecimientos y Créditos
 
+- [**Minidisc**](https://github.com/Loriage/Minidisc) de **Loriage**: El cliente de música original para iOS que inspiró la creación de este backend y reproductor de enriquecimiento local.
 - [**Apple Music-like Lyrics (AMLL)**](https://github.com/amll-dev/applemusic-like-lyrics) de **amll-dev**: Biblioteca de referencia y motor utilizado para el renderizado web de letras sincronizadas y efectos visuales tipográficos estilo Apple Music.
 
 ---

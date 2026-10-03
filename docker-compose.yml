@@ -6,10 +6,10 @@ services:
     container_name: music-player
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "7430:7430"
     environment:
       - MUSIC_DIR=/music
-      - PORT=8000
+      - PORT=7430
       - PYTHONDONTWRITEBYTECODE=1
     volumes:
       # CAMBIA '/ruta/a/tu/musica' por la carpeta donde tengas tus canciones en tu servidor

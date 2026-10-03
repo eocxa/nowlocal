@@ -15,8 +15,8 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [2/3] Abriendo navegador en http://localhost:8000 ...
-start http://localhost:8000
+echo [2/3] Abriendo navegador en http://localhost:7430 ...
+start http://localhost:7430
 
 echo.
 echo [3/3] Iniciando servidor de streaming y letras...

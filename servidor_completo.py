@@ -47,7 +47,7 @@ except ImportError:
 # ============================================================
 # CONFIGURACIÓN
 # ============================================================
-PUERTO = int(os.environ.get("PORT", 8000))
+PUERTO = int(os.environ.get("PORT", 7430))
 CARPETA_COMPLETO = os.path.dirname(os.path.abspath(__file__))
 RUTA_CONFIG = os.path.join(CARPETA_COMPLETO, "config.json")
 RUTA_HTML = os.path.join(CARPETA_COMPLETO, "index.html")
